@@ -14,6 +14,7 @@ export default defineConfig({
   },
   vite: {
     build: {
+      chunkSizeWarningLimit: 2000,
       rollupOptions: {
         external: ['nodemailer'],
       },
