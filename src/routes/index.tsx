@@ -67,7 +67,7 @@ function Logo() {
 
 function Header() {
   const [open, setOpen] = useState(false);
-  const nav = ["Features", "Company", "Resources", "Help", "Docs", "Pricing"];
+  const nav = ["Product", "Features", "Customers", "Company"];
   
   return (
     <header className="fixed top-0 inset-x-0 z-50 bg-black/40 backdrop-blur-xl border-b border-white/5">
@@ -263,7 +263,7 @@ function TrustBar() {
     "Vercel", "Raycast", "Linear", "Supabase", "Dub", "Arc"
   ];
   return (
-    <section className="py-12 border-y border-white/5 bg-black/50 relative z-10">
+    <section id="customers" className="py-12 border-y border-white/5 bg-black/50 relative z-10">
       <div className="mx-auto max-w-[1200px] px-6">
         <p className="text-center text-sm font-medium text-zinc-500 mb-8">
           Trusted by the best modern teams
@@ -349,7 +349,7 @@ function Features() {
 
 function DashboardPreview() {
   return (
-    <section className="py-24 px-6 relative z-10 overflow-hidden">
+    <section id="product" className="py-24 px-6 relative z-10 overflow-hidden">
       <div className="mx-auto max-w-[1200px]">
         <div className="rounded-[2.5rem] p-px bg-gradient-to-b from-white/15 to-transparent">
           <div className="rounded-[2.5rem] bg-[#050505] p-4 sm:p-8 lg:p-12 overflow-hidden relative">
@@ -446,7 +446,7 @@ function BottomCTA() {
 
 function Footer() {
   return (
-    <footer className="border-t border-white/5 bg-[#050505] pt-16 pb-8 px-6 relative z-10">
+    <footer id="company" className="border-t border-white/5 bg-[#050505] pt-16 pb-8 px-6 relative z-10">
       <div className="mx-auto max-w-[1200px] grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-16">
         <div className="col-span-2 lg:col-span-2">
           <Logo />
